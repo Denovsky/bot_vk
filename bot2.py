@@ -21,7 +21,7 @@ for event in longpoll.listen():
         attachments = []
         if reseived_message == "пикча" or reseived_message == "Картинка" or reseived_message == "картинка" or reseived_message == "Пикча":
             random_int = random.randint(1, 2)
-            image = "C:/Users/julia/Desktop/bot_vk-main/bot_v2.0/img/photo0" + str(random_int) + ".jpg"
+            image = "/static/photo0" + str(random_int) + ".jpg"
             upload_image = upload.photo_messages(photos=image)[0]
             attachments.append('photo{}_{}'.format(upload_image['owner_id'], upload_image['id']))
             write_message(sender, "нА, патеряйся")
