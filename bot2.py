@@ -24,11 +24,11 @@ for event in longpoll.listen():
             image = "img/photo0" + str(random_int) + ".jpg"
             upload_image = upload.photo_messages(photos=image)[0]
             attachments.append('photo{}_{}'.format(upload_image['owner_id'], upload_image['id']))
-            write_message(sender, "нА, патеряйся")
+            write_message(sender, "Держи друк")
             print(reseived_message)
-        elif reseived_message == "гей":
+        elif reseived_message == "дурак":
             write_message(sender, "сам " + reseived_message)
-        elif reseived_message == "жопа ты(":
+        elif reseived_message == "дурной ты дядя(":
             write_message(sender, "САМ(")
         else:
             write_message(sender, "0_0 такого нету ага")
