@@ -25,6 +25,5 @@ for event in longpoll.listen():
             upload_image = upload.photo_messages(photos=image)[0]
             attachments.append('photo{}_{}'.format(upload_image['owner_id'], upload_image['id']))
             write_message(sender, "Держи друк")
-            print(reseived_message)
         else:
             write_message(sender, "0_0 такого нету ага")
