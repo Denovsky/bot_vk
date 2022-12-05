@@ -19,7 +19,7 @@ for event in longpoll.listen():
         reseived_message = event.text
         sender = event.user_id
         attachments = []
-        if reseived_message == "пикча" or reseived_message == "Картинка" or reseived_message == "картинка" or reseived_message == "Пикча":
+        if reseived_message.lower() == "пикча" or reseived_message.lower() == "картинка":
             random_int = random.randint(1, 99)
             image = "img1/photo" + str(random_int) + ".jpg"
             upload_image = upload.photo_messages(photos=image)[0]
