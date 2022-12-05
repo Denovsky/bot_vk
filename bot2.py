@@ -10,7 +10,7 @@ def write_message(sender, message):
                                        'attachment': ','.join(attachments)})
 
 
-token = "04fe1bae82c7bdc937d04276842876c02fad75cac6b4ec487a5c07bd0a59fffe43640f3a25663cb849b2e"
+token = ""
 authorize = vk_api.VkApi(token=token)
 longpoll = VkLongPoll(authorize)
 upload = VkUpload(authorize)
